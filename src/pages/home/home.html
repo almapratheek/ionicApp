@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id='page-home'>
+  <h2>Welcome to CapOne DocLoad App</h2>
+  <p>
+    Upload below documents using camera/Doc icons.
+  </p>
+
+  <ion-list>
+    <ion-item id='item'>
+    <ion-label fixed> Paystub </ion-label>
+      <button [hidden]="!params.get('Paystub')" id='button' ion-button icon-only (click)="getPicture('Paystub')" item-right>
+          <ion-icon id='icon' name="glasses"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="takePhoto('Paystub')" item-right>
+          <ion-icon id='icon' name="camera"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="pickImage('Paystub')" item-right>
+          <ion-icon id='icon' name="document"></ion-icon>
+      </button>
+    </ion-item>
+
+    <ion-item id='item'>
+    <ion-label fixed> W2 </ion-label>
+      <button [hidden]="!params.get('W2')" id='button' ion-button icon-only (click)="getPicture('W2')" item-right>
+          <ion-icon id='icon' name="glasses"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="takePhoto('W2')" item-right>
+          <ion-icon id='icon' name="camera"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="pickImage('W2')" item-right>
+          <ion-icon id='icon' name="document"></ion-icon>
+      </button>
+    </ion-item>
+
+    <ion-item id='item'>
+    <ion-label fixed> Tax Return </ion-label>
+      <button [hidden]="!params.get('Tax Return')" id='button' ion-button icon-only (click)="getPicture('Tax Return')" item-right>
+          <ion-icon id='icon' name="glasses"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="takePhoto('Tax Return')" item-right>
+          <ion-icon id='icon' name="camera"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="pickImage('Tax Return')" item-right>
+          <ion-icon id='icon' name="document"></ion-icon>
+      </button>
+    </ion-item>
+
+    <ion-item id='item'>
+    <ion-label fixed> Title </ion-label>
+      <button [hidden]="!params.get('Title')" id='button' ion-button icon-only (click)="getPicture('Title')" item-right>
+          <ion-icon id='icon' name="glasses"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="takePhoto('Title')" item-right>
+          <ion-icon id='icon' name="camera"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="pickImage('Title')" item-right>
+          <ion-icon id='icon' name="document"></ion-icon>
+      </button>
+    </ion-item>
+
+    <ion-item id='item'>
+    <ion-label fixed> Home Appraisal </ion-label>
+      <button [hidden]="!params.get('Home Appraisal')" id='button' ion-button icon-only (click)="getPicture('Home Appraisal')" item-right>
+          <ion-icon id='icon' name="glasses"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="takePhoto('Home Appraisal')" item-right>
+          <ion-icon id='icon' name="camera"></ion-icon>
+      </button>
+      <button id='button' ion-button icon-only (click)="pickImage('Home Appraisal')" item-right>
+          <ion-icon id='icon' name="document"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+
